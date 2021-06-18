@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Center(
-          child: Text('đây là app ',style: TextStyle(color: Colors.white,fontSize: 30),),
+          child: Text('đây là app ',style: TextStyle(fontSize: 30),),
         ),
       ),
     );
