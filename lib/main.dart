@@ -1,3 +1,4 @@
+import 'package:example_2/categories_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,15 +10,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: Center(
-          child: Text('đây là app ',style: TextStyle(fontSize: 30),),
+        appBar: AppBar(
+          backgroundColor: Colors.green,
+          centerTitle: true,
+          title: Text("Hoang Anh"
+          ),
         ),
+        body: SafeArea(child: CategoriesPage(),)
       ),
     );
   }
